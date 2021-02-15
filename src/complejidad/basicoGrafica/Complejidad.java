@@ -1,3 +1,5 @@
+package complejidad.basicoGrafica;
+
 public class Complejidad {
 
     public void lineal(int N){
