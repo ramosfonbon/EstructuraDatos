@@ -2,12 +2,12 @@ package complejidad.basicoGrafica;
 
 public class Complejidad {
 
-    public void lineal(int N){
+    public int lineal(int N){
         int iter = 0;
         for (int i= 0; i < N; i++){
             iter++;
         }
-        System.out.println("N:" + N + " iter:" + iter);
+        return iter;
     }
 
     public void cuadratica(int N){
