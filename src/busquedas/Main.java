@@ -50,13 +50,13 @@ public class Main {
         Search s = new Search();
         System.out.println("Lista original");
         System.out.println(oList);
+//        System.out.println("Encontrado: " + s.lineal(oList,
+//                            new Integer(534), true));
         Collections.sort(oList);
         System.out.println("Lista ordenada");
         System.out.println(oList);
-      //  System.out.println("Encontrado: " + s.lineal(oList,
-      //                      new Integer(732), true));
         System.out.println("Binaria: " +
-                s.binaria(oList, new Integer(225), true));
+            s.binaria(oList, new Integer(326), true));
 
     }
 }

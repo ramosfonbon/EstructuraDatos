@@ -14,6 +14,10 @@ public class Search {
     public int lineal(ArrayList<Integer> a, Integer b, boolean d){
         int pos = -1;
         int iter = 0;
+        // compareTo
+        // 0 : los elemenotos son iguales
+        // > 0: el elemento es mayor
+        // < 0: el elemento es menor
         for (int i = 0; i < a.size(); i++){
             if (b.compareTo(a.get(i)) == 0){
                 pos = i;
@@ -38,8 +42,9 @@ public class Search {
         if (d){
             System.out.println("inicio:" + inicio + " fin:" + fin + " centro:" + centro + " tam:"+tam);
         }
-        if (b.compareTo(a.get(centro)) == 0){
+        if (b.compareTo(a.get(centro)) == 0){ // El elemento
             pos = centro;
+            // se encuentra
         }
         // compareTo   regresa 0 si los elementos son iguales
         //             regresa valor positivo si el elemento es mayor
