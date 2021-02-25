@@ -21,11 +21,12 @@ public class Main {
      */
     public static void main(String[] args) {
 
-        Caja caja1 = new Caja(17,"fresa");
-        Caja caja2 = new Caja(15,"Mango");
+        Caja caja1 = new Caja(19,"Zapote");
+        Caja caja2 = new Caja(17,"Mango");
         Caja caja3 = new Caja(1,"Manzana");
 
-        System.out.println(" Caja 1 ??? caja 2: " + caja1.compareTo(caja2));
+    //    System.out.println(" Caja 1 ??? caja 2: " + caja1.compareTo(caja2));
+
         ArrayList<Caja> cajas= new ArrayList<>();
         cajas.add(caja1);
         cajas.add(caja2);
@@ -34,8 +35,6 @@ public class Main {
         System.out.println("Elementos ordenados");
         Collections.sort(cajas);
         System.out.println(cajas);
-
-
 
     }
 }

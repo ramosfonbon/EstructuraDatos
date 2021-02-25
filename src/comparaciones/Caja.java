@@ -1,6 +1,6 @@
 package comparaciones;
 
-public class Caja implements Comparable<Caja>{
+public class Caja implements Comparable<Caja> {
     private int peso;
     private String fruta;
 
@@ -9,6 +9,7 @@ public class Caja implements Comparable<Caja>{
         this.fruta = fruta;
     }
 
+ //comparacion por peso
     @Override
     public int compareTo(Caja c){
         int resultado = 0;
@@ -24,6 +25,12 @@ public class Caja implements Comparable<Caja>{
     }
 
 
+/* comparacion nombre
+    @Override
+    public int compareTo(Caja c){
+        return this.fruta.compareTo(c.fruta);
+    }
+*/
     public int getPeso() {
         return peso;
     }
@@ -40,8 +47,10 @@ public class Caja implements Comparable<Caja>{
         this.fruta = fruta;
     }
 
-    @Override
+   @Override
     public String toString(){
-        return "P:" + this.peso + " F:" + this.fruta;
+        return "P:" + this.peso +
+                " F:" +
+                this.fruta;
     }
 }
