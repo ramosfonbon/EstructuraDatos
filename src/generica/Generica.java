@@ -16,6 +16,7 @@ public class Generica<T> {
     }
     public void showType()
     {
-        System.out.println("Tipo es: " + obj.getClass().getName());
+        System.out.println("Tipo es: " +
+                obj.getClass().getName());
     }
 }

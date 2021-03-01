@@ -32,4 +32,9 @@ public class Caja<T> {
     public String showType(){
         return contenido.getClass().getName();
     }
+
+    @Override
+    public String toString(){
+        return contenido + ":" + cantidad;
+    }
 }
