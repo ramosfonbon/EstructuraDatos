@@ -33,9 +33,9 @@ public class MainBusquedaLibro {
                             s.lineal(listaLibros,buscar,false));
 
         ArrayList<Lapiz> listaLapiz = new ArrayList<>();
-        listaLapiz.add(new Lapiz("amarillo", 2));
-        s.lineal(listaLapiz, new Lapiz("amarillo",2),
-                false);
+     //   listaLapiz.add(new Lapiz("amarillo", 2));
+       // s.lineal(listaLapiz, new Lapiz("amarillo",2),
+       //         false);
 
 
 
