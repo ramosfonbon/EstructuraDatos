@@ -3,10 +3,19 @@ package generica;
 public class Libro implements Comparable<Libro>{
     private String titulo;
     private int paginas;
+    private String isbn;
+    private String autores;
 
     public Libro(String titulo, int paginas) {
         this.titulo = titulo;
         this.paginas = paginas;
+    }
+
+    public Libro(String titulo, int paginas, String autores, String isbn) {
+        this.titulo = titulo;
+        this.paginas = paginas;
+        this.autores = autores;
+        this.isbn = isbn;
     }
 
     @Override
@@ -42,8 +51,26 @@ public class Libro implements Comparable<Libro>{
         this.paginas = paginas;
     }
 
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getAutores() {
+        return autores;
+    }
+
+    public void setAutores(String autores) {
+        this.autores = autores;
+    }
+
     @Override
     public String toString(){
-        return this.titulo + ":" + this.paginas;
+        return this.titulo + ":" +
+                this.paginas + ":" +
+                this.isbn;
     }
 }
