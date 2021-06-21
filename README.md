@@ -1,5 +1,5 @@
 # EstructuraDatos
-Ejemplos Estructura de datos en Java
+Ejemplos Estructura de datos en Java.
 
 ### complejidad.basico
 Incluye la implementación de diferentes tipos de complejidad
