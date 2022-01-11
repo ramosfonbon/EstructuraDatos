@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class Huffman {
+    
     public HashMap<String, Integer> getTablaFrecuencias(String mensaje){
         HashMap<String, Integer> tablaFrecuencia = new HashMap<>();
         for (int i=0; i < mensaje.length(); i++){
@@ -42,11 +43,11 @@ public class Huffman {
             Nodo nodoNuevo = new Nodo(nodo0.getLetra()+nodo1.getLetra(),
                                      nodo0.getFrecuencia()+nodo1.getFrecuencia()
                                       );
-            nodoNuevo.setIzq(nodo0);
-            nodoNuevo.setDer(nodo1);
+            nodoNuevo.setIzq(nodo1);
+            nodoNuevo.setDer(nodo0);
             listaNodos.add(nodoNuevo);
             Collections.sort(listaNodos);
-            System.out.println("Nodo Nuevo" + nodoNuevo);
+            System.out.println("Nodo Nuevo: " + nodoNuevo);
         }
         Nodo raiz = listaNodos.get(0);
         System.out.println("lista Nodos proceso:" + listaNodos);
@@ -55,7 +56,20 @@ public class Huffman {
 
     }
 
+    public void  preOrder (Nodo reco, String cadena)
+    {
+        if (reco != null){
+            if (reco.getIzq() == null && reco.getDer() == null){
+                System.out.println("hoja: " + reco.getLetra() + " " + cadena);
+                // nodo.bitcode = cadena
+                // variable.put()
+            }
+            preOrder(reco.getIzq(), cadena +"0");
+            preOrder(reco.getDer(), cadena + "1");
 
+        }
+
+    }
 
 
 }

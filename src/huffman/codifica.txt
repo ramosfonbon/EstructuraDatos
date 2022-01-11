@@ -1,0 +1,32 @@
+ El oso polar nada en el mar congelado
+000110111110010111001101
+
+00 01101 1111 00 101 11001 101
+ El oso
+hoja:   00
+hoja: d 0100
+hoja: r 0101
+hoja: c 01100
+hoja: E 01101
+hoja: g 01110
+hoja: m 01111
+hoja: a 100
+hoja: o 101
+hoja: p 11000
+hoja: s 11001
+hoja: e 1101
+hoja: n 1110
+hoja: l 1111
+
+
+
+public static <K, V> K getKey(Map<K, V> map, V value)
+    {
+        for (Map.Entry<K, V> entry: map.entrySet())
+        {
+            if (value.equals(entry.getValue())) {
+                return entry.getKey();
+            }
+        }
+        return null;
+    }

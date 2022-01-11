@@ -15,7 +15,12 @@ public class Nodo implements Comparable<Nodo>{
 
     @Override
     public int compareTo(Nodo f){
-        return getFrecuencia().compareTo(f.getFrecuencia());
+        if (getLetra().compareTo(f.getLetra()) == 0){
+            return getFrecuencia().compareTo(f.getFrecuencia());
+        } else {
+            return getFrecuencia().compareTo(f.getFrecuencia());
+        }
+
     }
 
     public String getLetra() {
