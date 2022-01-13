@@ -25,6 +25,5 @@ public class Main {
         while (!pila2.isEmpty()) {
             System.out.println("pop2:" + pila2.pop());
         }
-// linea modificada desde Intellij
     }
 }
