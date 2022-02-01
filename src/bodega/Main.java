@@ -41,7 +41,6 @@ public class Main {
         camion.enqueue(recipiente4);
         camion.enqueue(recipiente5);
 
-
         ColaRecipiente estante1 = new ColaRecipiente(10);
         ColaRecipiente estante2 = new ColaRecipiente(10);
         ColaRecipiente estante3 = new ColaRecipiente(10);
