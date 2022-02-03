@@ -14,6 +14,9 @@ public class Main {
         Recipiente recipiente9 = new Recipiente("MEMBRILLO", 3, 15);
         Recipiente recipiente10 = new Recipiente("MANZANA", 1, 35);
 
+
+
     }
 }
+
 
