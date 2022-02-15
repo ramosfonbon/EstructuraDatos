@@ -1,5 +1,8 @@
 package complejidad.basicoGrafica;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,23 +14,26 @@ public class Main {
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.lineal(n);
         }
+        valores(resultados);
         imprimir(resultados);
-/*
+
 
         for (int renglon=0; renglon < ejecuciones; renglon++) {
             int n = (renglon + 1) * 1;
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.cuadratica(n);
         }
+        valores(resultados);
         imprimir(resultados);
 
-        /*
+
         for (int renglon=0; renglon < ejecuciones; renglon++) {
             int n = (renglon + 1) * 100;
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.log(n);
         }
-        imprimir(resultados);  */
+        valores(resultados);
+        imprimir(resultados);
     }
 
     private static void nada(){
@@ -42,6 +48,20 @@ public class Main {
             }
             System.out.println();
         }
+
+    }
+
+    private static void valores(int [][] datos){
+        //Utilizando for each
+        for (int[] r:datos) {
+             System.out.println(r[0] + "," + r[1]);
+        }
+
+        // utilizando stream
+        Arrays.stream(datos)
+                .forEach((x) ->
+                        System.out.println(x[0] + "," + x[1])
+                );
 
     }
 
