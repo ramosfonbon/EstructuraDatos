@@ -7,14 +7,14 @@ public class Main {
 
     public static void main(String[] args) {
 	    Complejidad c = new Complejidad();
-	    int ejecuciones = 20;
+	    int ejecuciones = 10;
         int resultados[][] = new int[ejecuciones][2];
         for (int renglon=0; renglon < ejecuciones; renglon++) {
             int n = (renglon + 1) * 1;
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.lineal(n);
         }
-        valores(resultados);
+      //  valores(resultados);
         imprimir(resultados);
 
 
@@ -23,7 +23,7 @@ public class Main {
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.cuadratica(n);
         }
-        valores(resultados);
+     //   valores(resultados);
         imprimir(resultados);
 
 
@@ -32,8 +32,8 @@ public class Main {
             resultados[renglon][0] = n;
             resultados[renglon][1] = c.log(n);
         }
-        valores(resultados);
-        imprimir(resultados);
+      //  valores(resultados);
+       imprimir(resultados);
     }
 
     private static void nada(){
@@ -57,6 +57,7 @@ public class Main {
              System.out.println(r[0] + "," + r[1]);
         }
 
+        System.out.println("=======");
         // utilizando stream
         Arrays.stream(datos)
                 .forEach((x) ->
