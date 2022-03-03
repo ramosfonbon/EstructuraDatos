@@ -1,7 +1,7 @@
 package compara;
 
 import org.junit.Before;
-
+// xunit
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
