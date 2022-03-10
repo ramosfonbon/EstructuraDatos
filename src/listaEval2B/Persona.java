@@ -1,11 +1,6 @@
 package listaEval2B;
 
-// Ejemplo de implementacion y uso
-// de la interfase Comparator
-//
 
-
-import java.util.Objects;
 
 public class Persona implements Comparable<Persona> {
     private String nombre;
