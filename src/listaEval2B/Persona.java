@@ -1,7 +1,6 @@
 package listaEval2B;
 
 
-
 public class Persona implements Comparable<Persona> {
     private String nombre;
     private int edad;
@@ -17,12 +16,32 @@ public class Persona implements Comparable<Persona> {
     //Implementar
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Persona persona = (Persona) o;  //cast
+        return  nombre.equals(persona.getNombre())    //  nombre == persona.getNombre()
+                && estatura == persona.getEstatura();
 
     }
 
     // Implementar
     @Override
     public int compareTo(Persona p){
+        int resultado = nombre.compareTo(p.getNombre());
+        if (resultado != 0){
+            return resultado;
+        }
+        if (estatura == p.getEstatura()){
+            return 0;
+        }
+        if (estatura <= p.getEstatura()){
+            return -1;
+        } else{
+            return  1;
+        }
+
+
+
     }
 
     public String getNombre() {
@@ -59,6 +78,6 @@ public class Persona implements Comparable<Persona> {
 
     @Override
     public String toString(){
-        return ciudad + ":" + edad;
+        return nombre + ":" + estatura;
     }
 }
