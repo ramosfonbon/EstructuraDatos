@@ -38,6 +38,7 @@ public class ListaSimple<T> {
     // Implementar contains, regresa la posicion donde
     // encuentre el primer objeto que sea igual
     public int contains(T o){
+        return -1;
 
     }
 

@@ -32,6 +32,9 @@ public class SearchGenerica<T extends Comparable<T> > {
         return pos;
     }
 
+
+
+
     public int lineal(ArrayList<T> a, T b, Comparator<T> c,
                       boolean d){
         int pos = -1;

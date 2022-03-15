@@ -8,7 +8,7 @@ public class Main {
         // agregar 10 mascotas a la lista
 
         // tomar la mascota4 y ejecutar la busqueda, imprimir ls posicion en que se encontro
-        // ej: mascotas.contains(mascota8)
+        // ej: mascotas.contains(mascota4)
 
         // comparar la mascota4 y la mascota7, imprimir el resultado
         // ej: mascota4.compareTo(mascota7)

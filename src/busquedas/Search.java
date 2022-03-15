@@ -36,7 +36,9 @@ public class Search {
         int tam = (a.size()-1)/2;
         int inicio=0, fin = a.size()-1;
         int centro = tam;
-        
+    // 0123456789
+    // 01234 5 6789
+    //         67 8 9
       while (inicio<=fin){
         centro = inicio + (fin - inicio) / 2;  
         if (d){

@@ -12,12 +12,13 @@ public class Mascota implements Comparable<Mascota> {
     //Implementar
     @Override
     public boolean equals(Object o) {
-
+return false;
     }
 
     // Implementar
     @Override
     public int compareTo(Mascota m){
+        return 0;
     }
 
 
