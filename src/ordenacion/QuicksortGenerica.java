@@ -1,8 +1,8 @@
 package ordenacion;
 
-public class Quicksort{
+public class QuicksortGenerica<T extends Comparable<T>> {
 
-  public void quickSort(int arr[], int left, int right) {
+  public void quickSort(T arr[], int left, int right) {
     int index = partition(arr, left, right);
     if (left < index - 1) {
       quickSort(arr, left, index - 1);
@@ -12,15 +12,15 @@ public class Quicksort{
     }
   }
 
-  private int partition(int arr[], int left, int right){
+  private int partition(T arr[], int left, int right){
     int i = left, j = right;
-    int tmp;
-    int pivot = arr[(left + right) / 2];
+    T tmp;
+    T pivot = arr[(left + right) / 2];
     while (i <= j) {
-      while (arr[i] < pivot) {
+      while (arr[i].compareTo(pivot) < 0) {  //arr[i] < pivot
         i++;
       }
-      while (arr[j] > pivot) {
+      while (arr[j].compareTo(pivot) > 0) {  // arr[j] > pivot
         j--;
       }
       if (i <= j) {

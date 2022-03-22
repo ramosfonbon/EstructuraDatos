@@ -12,7 +12,7 @@ public class MainGenerica
 
         SearchGenerica<Recipiente> searchG = new SearchGenerica<>();
         int resultado = searchG.lineal(recipientes,
-                new Recipiente("pina",8,10), false);
+                new Recipiente("melon",2,2), false);
         System.out.println("Encontrado: " + resultado);
 
     }
